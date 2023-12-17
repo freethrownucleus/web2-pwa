@@ -107,7 +107,7 @@ const host = 'localhost';
 const externalUrl = process.env.RENDER_EXTERNAL_URL;
 const port = parseInt(process.env.PORT) || 4080;
 
-const hostname = externalUrl ? '127.0.0.1' : host;
+const hostname = externalUrl ? '0.0.0.0' : host;
 
 app.listen(port, hostname, () => {
     const urlMessage = externalUrl ? ` and from outside on ${externalUrl}` : '';
