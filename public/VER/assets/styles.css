@@ -1,0 +1,108 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.custom-logo {
+    flex-shrink: 0;
+}
+
+.nav-link {
+    color: white;
+    display: inline-block;
+    margin: 0; 
+    padding: 0; 
+    text-decoration: none;
+}
+
+.nav-link span {
+    cursor: pointer;
+}
+
+.nav-link:hover span {
+    text-decoration: underline;
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.custom-logo, .nav-item {
+    pointer-events: none;
+}
+
+.custom-logo a, .nav-item a {
+    pointer-events: auto;
+}
+
+.custom-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.custom-header h2 {
+    margin-bottom: 20px;
+}
+
+.custom-nav {
+    background-color: rgb(65, 61, 61);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.video-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.video-item {
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 2%;
+    background-color: white;
+}
+
+.video-item h3 {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .video-item {
+        flex-basis: 100%;
+        margin-left: 0;
+    }
+}
+
+.video-container {
+    margin-top: 20px;
+}
+
+.navbar {
+    z-index: 100;
+}
+
+.btn.btn-success {
+    background-color: #007bff; 
+    border-color: #007bff; 
+    color: #fff; 
+}
+
+#afterSnap .d-flex {
+    display: flex;
+}
+
+#afterSnap .align-items-center {
+    align-items: center;
+}
+
+#afterSnap .me-2 {
+    margin-right: 0.5rem;
+}

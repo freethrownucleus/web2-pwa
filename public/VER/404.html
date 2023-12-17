@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/site.css">
+    <link rel="manifest" href="./manifest.json">
+
+    <style>
+      .nav-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+      }
+
+      .custom-logo {
+          flex-shrink: 0;
+      }
+
+      .nav-link {
+          color: white;
+          display: inline-block;
+          margin: 0; 
+          padding: 0; 
+          text-decoration: none;
+          
+      }
+
+      .nav-link span {
+          cursor: pointer;
+      }
+
+      .nav-link:hover span {
+          text-decoration: underline;
+      }
+
+      .nav-item {
+          flex: 1;
+          text-align: center;
+      }
+
+      .custom-logo, .nav-item {
+          pointer-events: none;
+      }
+
+      .custom-logo a, .nav-item a {
+          pointer-events: auto;
+      }
+
+      .custom-header {
+          border-bottom: 1px solid #dee2e6;
+      }
+
+      .custom-header h2 {
+          margin-bottom: 20px;
+      }
+
+      .custom-nav {
+          background-color: rgb(65, 61, 61);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px;
+      }
+
+      .video-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          justify-content: flex-start;
+          text-align: center;
+          margin: 0 auto;
+      }
+
+      .video-item {
+          padding: 10px;
+          box-sizing: border-box;
+          margin-left: 2%;
+          background-color: white;
+      }
+
+      .video-item h3 {
+          color: black;
+      }
+
+      @media (max-width: 768px) {
+          .video-item {
+              flex-basis: 100%;
+              margin-left: 0;
+          }
+      }
+
+      .video-container {
+          margin-top: 20px;
+      }
+
+      .navbar {
+          z-index: 100;
+      }
+
+      .btn.btn-success {
+          background-color: #007bff; 
+          border-color: #007bff; 
+          color: #fff; 
+      }
+
+      #afterSnap .d-flex {
+          display: flex;
+      }
+
+      #afterSnap .align-items-center {
+          align-items: center;
+      }
+
+      #afterSnap .me-2 {
+          margin-right: 0.5rem;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <nav class="custom-nav" style="margin-bottom: -5px;">
+      <div class="nav-container">
+          <div class="nav-item">
+              <a class="nav-link custom-active" aria-current="page" href="index.html">Videos</a>
+          </div>
+          
+          <div class="custom-logo">
+            <a href="index.html">
+              <img src="/assets/img/pwa.png" width="60px" height="60px" />
+            </a>
+          </div>
+
+          <div class="nav-item">
+              <a class="nav-link" href="upload.html">Upload</a>
+          </div>
+      </div>   
+    </nav>
+
+    <div class="text-center" style="position: absolute; top: 15%; left: 50%; transform: translate(-50%, -50%);">
+      <h2>404, move along ...</h2>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+
+</html>
